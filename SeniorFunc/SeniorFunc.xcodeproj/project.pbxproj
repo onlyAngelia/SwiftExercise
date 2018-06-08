@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3169B26C20CA74B800A26889 /* ExcersieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169B26B20CA74B800A26889 /* ExcersieViewController.swift */; };
+		318AAFF120C4F14000D2A78E /* QuckLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318AAFF020C4F14000D2A78E /* QuckLookViewController.swift */; };
 		31B0C29020BFA1A600A17BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B0C28F20BFA1A600A17BF7 /* AppDelegate.swift */; };
 		31B0C29220BFA1A600A17BF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B0C29120BFA1A600A17BF7 /* ViewController.swift */; };
 		31B0C29520BFA1A600A17BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B0C29320BFA1A600A17BF7 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3169B26B20CA74B800A26889 /* ExcersieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcersieViewController.swift; sourceTree = "<group>"; };
+		318AAFF020C4F14000D2A78E /* QuckLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuckLookViewController.swift; sourceTree = "<group>"; };
 		31B0C28C20BFA1A600A17BF7 /* SeniorFunc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeniorFunc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B0C28F20BFA1A600A17BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B0C29120BFA1A600A17BF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +60,12 @@
 			children = (
 				31B0C28F20BFA1A600A17BF7 /* AppDelegate.swift */,
 				31B0C29120BFA1A600A17BF7 /* ViewController.swift */,
+				318AAFF020C4F14000D2A78E /* QuckLookViewController.swift */,
 				31B0C29320BFA1A600A17BF7 /* Main.storyboard */,
 				31B0C29620BFA1A800A17BF7 /* Assets.xcassets */,
 				31B0C29820BFA1A800A17BF7 /* LaunchScreen.storyboard */,
 				31B0C29B20BFA1A800A17BF7 /* Info.plist */,
+				3169B26B20CA74B800A26889 /* ExcersieViewController.swift */,
 			);
 			path = SeniorFunc;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318AAFF120C4F14000D2A78E /* QuckLookViewController.swift in Sources */,
 				31B0C29220BFA1A600A17BF7 /* ViewController.swift in Sources */,
+				3169B26C20CA74B800A26889 /* ExcersieViewController.swift in Sources */,
 				31B0C29020BFA1A600A17BF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

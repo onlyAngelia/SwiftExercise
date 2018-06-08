@@ -49,6 +49,14 @@ extension City{
     }
 }
 
+extension Optional{
+    func flatMap<U>(_ transform:(Wrapped) -> U?) -> U? {
+        guard let x = self else {
+            return nil;
+        }
+        return transform(x)
+    }
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -63,7 +71,13 @@ class ViewController: UIViewController {
         cities.filter{$0.population > 1000}.map{$0.scalingPopulation()}.reduce("City:Population"){
             result,c in return result + "\n" + "\(c.name):\(c.population)"
         }
-       
+        let captitals = ["France": "Paris",
+        "Spain": "Madrid",
+        "The Netherlands": "Amsterdam",
+        "Belgium": "Brussels"]
+    
+        Int.arbitrary()//生成随机数
+    
     }
     
     func compute(array:[Int],transfor:(Int) -> Int) -> [Int] {
@@ -74,7 +88,15 @@ class ViewController: UIViewController {
         return result;
         
     }
-    
+    //flatMap
+    func add4(_ optionalX:Int?,_ optionalY:Int?) -> Int? {
+        return optionalX.flatMap{x in optionalY.flatMap{ y in
+            return x + y
+            }
+            
+        }
+        
+    }
    //泛型
     func genericCompute<T>(array:[Int],transform:(Int)->T) -> [T] {
         var result:[T] = []
